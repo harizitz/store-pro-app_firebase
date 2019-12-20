@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Store pro</title>
+    <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+  <body class="bg">
+    <div class="container">
+          <h1>Store pro</h1>
+          <h4>Enter the item to search</h4>
+          <input placeholder="search the item (don't use any capitals)"  id="itemval" type="text" tabindex="1" required autofocus>
+          <button id="b" onclick="search()" > Search </button>
+          <br>      <h4 id="price"></h4>          <br>          <br>
+          <button type="button" id="11A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="21A" name="button">..</button >
+          <button type="button" id="21B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="31A" name="button">..</button >
+          <button type="button" id="31B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="41A" name="button">..</button >
+          <button type="button" id="41B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="51A" name="button">..</button >
+          <button type="button" id="51B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="61B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <br>
+          <button type="button" id="12A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="22A" name="button">..</button >
+          <button type="button" id="22B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="32A" name="button">..</button >
+          <button type="button" id="32B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="42A" name="button">..</button >
+          <button type="button" id="42B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="52A" name="button">..</button >
+          <button type="button" id="52B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="62A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <br>
+          <button type="button" id="13A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="23A" name="button">..</button >
+          <button type="button" id="23B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="33A" name="button">..</button >
+          <button type="button" id="33B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="43A" name="button">..</button >
+          <button type="button" id="43B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="53A" name="button">..</button >
+          <button type="button" id="53B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="63A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <br>
+          <button type="button" id="14A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="24A" name="button">..</button >
+          <button type="button" id="24B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="34A" name="button">..</button >
+          <button type="button" id="34B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="44A" name="button">..</button >
+          <button type="button" id="44B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="54A" name="button">..</button >
+          <button type="button" id="54B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="64A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <br>
+          <button type="button" id="15A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="25A" name="button">..</button >
+          <button type="button" id="25B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="35A" name="button">..</button >
+          <button type="button" id="35B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="45A" name="button">..</button >
+          <button type="button" id="45B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="55A" name="button">..</button >
+          <button type="button" id="55B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="65A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <br>
+          <button type="button" id="16A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="26A" name="button">..</button >
+          <button type="button" id="26B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="36A" name="button">..</button >
+          <button type="button" id="36B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="46A" name="button">..</button >
+          <button type="button" id="46B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="56A" name="button">..</button >
+          <button type="button" id="56B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="66A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <br>
+          <button type="button" id="17A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="27A" name="button">..</button >
+          <button type="button" id="27B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="37A" name="button">..</button >
+          <button type="button" id="37B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="47A" name="button">..</button >
+          <button type="button" id="47B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="57A" name="button">..</button >
+          <button type="button" id="57B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="67A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <br>
+          <button type="button" id="18A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="28A" name="button">..</button >
+          <button type="button" id="28B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="38A" name="button">..</button >
+          <button type="button" id="38B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="48A" name="button">..</button >
+          <button type="button" id="48B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="58A" name="button">..</button >
+          <button type="button" id="58B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="68A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <br>
+          <button type="button" id="19A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="29A" name="button">..</button >
+          <button type="button" id="29B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="39A" name="button">..</button >
+          <button type="button" id="39B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="49A" name="button">..</button >
+          <button type="button" id="49B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="59A" name="button">..</button >
+          <button type="button" id="59B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="69A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <br>
+          <button type="button" id="110A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="210A" name="button">..</button >
+          <button type="button" id="210B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="310A" name="button">..</button >
+          <button type="button" id="310B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="410A" name="button">..</button >
+          <button type="button" id="410B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="510A" name="button">..</button >
+          <button type="button" id="510B" name="button">..</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <button type="button" id="610A" name="button">..</button >
+          &nbsp&nbsp&nbsp&nbsp&nbsp
+          <br>
+          window.location.replace("display.html");
+    </div>
+  </body>
+</html>
