@@ -7,4 +7,4 @@ The user can :
 - View the item location at the store
 - Check the price of the item
 
-> **[🌐 VISIT WEBSITE ](https://storeproapp.now.sh "VISIT WEBSITE 🌐")**
+ **[🌐 VISIT WEBSITE ](https://storeproapp.now.sh "VISIT WEBSITE 🌐")**
