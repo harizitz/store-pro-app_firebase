@@ -1,5 +1,5 @@
 # Storepro
-A small web application that indicates the items location at the store
+A small web application that indicates the items location at the store  
 
 The user can :
 - Log In with Google account
